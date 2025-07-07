@@ -1,6 +1,6 @@
 #!/bin/bash
 
-THEME_DIR="$HOME/.config/kitty/kitty-themes/themes"
+THEME_DIR="$HOME/.config/kitty/themes"
 THEME_FILES=("$THEME_DIR"/*.conf)
 
 if [[ ${#THEME_FILES[@]} -eq 0 ]]; then

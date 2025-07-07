@@ -1,7 +1,7 @@
 #!/bin/bash
 
-THEME_DIR=~/.config/kitty/kitty-themes/themes
-DARK_THEME=Elemental.conf
+THEME_DIR=~/.config/kitty/themes
+DARK_THEME=Obsidian.conf
 LIGHT_THEME=Solarized_Light.conf
 
 COLOR_SCHEME=$(gsettings get org.gnome.desktop.interface color-scheme)
