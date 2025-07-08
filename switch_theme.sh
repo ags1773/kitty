@@ -1,13 +1,24 @@
 #!/bin/bash
 
 THEME_DIR=~/.config/kitty/themes
-DARK_THEME=Obsidian.conf
-LIGHT_THEME=Solarized_Light.conf
+
+DARK_THEMES=(Obsidian.conf Dracula.conf Monokai.conf gruvbox_dark.conf)
+LIGHT_THEMES=(Solarized_Light.conf Belafonte_Day.conf)
+
+get_random_theme() {
+    local themes=("$@")
+    echo "${themes[$RANDOM % ${#themes[@]}]}"
+}
 
 COLOR_SCHEME=$(gsettings get org.gnome.desktop.interface color-scheme)
 
 if [[ "$COLOR_SCHEME" == "'prefer-dark'" ]]; then
-    kitty @ set-colors -a "$THEME_DIR/$DARK_THEME"
+    CHOSEN_DARK_THEME=$(get_random_theme "${DARK_THEMES[@]}")
+    kitty @ set-colors -a "$THEME_DIR/$CHOSEN_DARK_THEME"
+    echo "Applied theme: ${CHOSEN_DARK_THEME%?????}"
 else
-    kitty @ set-colors -a "$THEME_DIR/$LIGHT_THEME"
+    CHOSEN_LIGHT_THEME=$(get_random_theme "${LIGHT_THEMES[@]}")
+    kitty @ set-colors -a "$THEME_DIR/$CHOSEN_LIGHT_THEME"
+    # echo "Applied theme: $(basename "$CHOSEN_LIGHT_THEME")"
+    echo "Applied theme: ${CHOSEN_LIGHT_THEME%?????}"
 fi
