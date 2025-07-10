@@ -2,8 +2,8 @@
 
 THEME_DIR=~/.config/kitty/themes
 
-DARK_THEMES=(Obsidian.conf Dracula.conf Monokai.conf gruvbox_dark.conf)
-LIGHT_THEMES=(Solarized_Light.conf Belafonte_Day.conf)
+DARK_THEMES=(Obsidian.conf Dracula.conf Monokai.conf gruvbox_dark.conf WildCherry.conf Monokai_Soda.conf)
+LIGHT_THEMES=(Solarized_Light.conf Belafonte_Day.conf ayu_light.conf)
 
 get_random_theme() {
     local themes=("$@")
