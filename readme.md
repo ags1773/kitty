@@ -1,6 +1,10 @@
 # Config for kitty terminal
 
-### Notes:
+Site: https://sw.kovidgoyal.net/kitty
+
+## Theming
+
+### Note:
 
 - Place all theme files inside ./themes directory so that the scripts can pick them up
 - add approptiate aliases in your `.bashrc`/`.zshrc` depending on which shell you use
