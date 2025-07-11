@@ -3,7 +3,6 @@ confirm_os_window_close 0       # hides annoying message while closing kitty
 remember_window_size no
 initial_window_width 1200
 initial_window_height 800
-font_size 13
 
 # BEGIN_THEMING
 ### ↓ pick one ↓ ###
@@ -12,9 +11,10 @@ shell sh -c "/home/amogh/.config/kitty/switch_theme.sh; exec zsh"   # applies fr
 ### ↑ pick one ↑ ###
 # END_THEMING
 
-## FYI run 'kitten choose-fonts' to change kitty fonts
 # BEGIN_KITTY_FONTS
-font_family      family="CommitMono Nerd Font Mono"
+## FYI run 'kitten choose-fonts' to change font
+font_family      family="Source Code Pro"
+font_size 14
 bold_font        auto
 italic_font      auto
 bold_italic_font auto
