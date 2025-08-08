@@ -1,13 +1,13 @@
 #!/bin/bash
 
 THEME_DIR=~/.config/kitty/themes
-FAVOURITE_THEME_WEIGHT=0.5  # Value between 0 and 1
+FAVOURITE_THEME_WEIGHT=0.5  # 0 < value < 1 | Higher the value more the probability of applying one of the favourite themes
 
 DARK_THEMES=(AdventureTime.conf Afterglow.conf AlienBlood.conf Argonaut.conf Arthur.conf Atom.conf ayu.conf ayu_mirage.conf Belafonte_Night.conf BirdsOfParadise.conf Blazer.conf Borland.conf Broadcast.conf Brogrammer.conf C64.conf Chalk.conf Chalkboard.conf Ciapre.conf Cobalt2.conf Dark_pastel.conf Desert.conf DjangoSmooth.conf Dracula.conf Espresso.conf Flat.conf FrontEndDelight.conf FunForrest.conf Galaxy.conf Grape.conf Grass.conf Harper.conf Highway.conf Hipster_Green.conf Homebrew.conf Hurtado.conf Hybrid.conf IC_Green_PPL.conf IC_Orange_PPL.conf idleToes.conf IR_Black.conf Japanesque.conf LiquidCarbon.conf LiquidCarbonTransparent.conf LiquidCarbonTransparentInverse.conf Material.conf MaterialDark.conf Medallion.conf Misterioso.conf Molokai.conf MonaLisa.conf Monokai_Soda.conf N0tch2k.conf Neopolitan.conf Neutron.conf Night_Owlish_Light.conf NightLion_v1.conf NightLion_v2.conf Obsidian.conf Ocean.conf Ollie.conf PaulMillr.conf PencilDark.conf Pnevma.conf Pro.conf Red_Alert.conf Red_Sands.conf Rippedcasts.conf Royal.conf SeaShells.conf Seti.conf Shaman.conf Slate.conf Smyck.conf SoftServer.conf Spacedust.conf SpaceGray.conf SpaceGray_Eighties.conf SpaceGray_Eighties_Dull.conf Spring.conf Square.conf Sundried.conf Symfonic.conf Teerb.conf Thayer_Bright.conf Tomorrow_Night.conf Tomorrow_Night_Blue.conf Tomorrow_Night_Bright.conf Tomorrow_Night_Eighties.conf ToyChest.conf Treehouse.conf Twilight.conf Ubuntu.conf Urple.conf Vaughn.conf VibrantInk.conf WarmNeon.conf Wez.conf WildCherry.conf Wombat.conf 3024_Night.conf gruvbox.conf gruvbox_dark.conf Solarized_Dark.conf)
 LIGHT_THEMES=(Belafonte_Day.conf ayu_light.conf PencilLight.conf Tomorrow.conf Novel.conf 3024_Day.conf gruvbox_light.conf Solarized_Light.conf Github.conf)
 BLACKLISTED=(Github.conf)
 FAVOURITE_LIGHT=()
-FAVOURITE_DARK=(IC_Orange_PPL.conf Spacedust.conf)
+FAVOURITE_DARK=(IC_Orange_PPL.conf Spacedust.conf Broadcast.conf Misterioso.conf Neopolitan.conf)
 
 filter_blacklisted() {
     local themes=("$@")
